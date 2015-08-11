@@ -1,5 +1,5 @@
 $('#products-table-wrapper').html('<%= escape_javascript(render "spree/admin/products/related_products_table", product: @product) %>');
-$('#add_product_name').val('');
-$('#add_variant_id').val('');
-$('#add_quantity').val(1);
+$('#product_id').val('');
 $('.actions a').tooltip();
+$('.js-sort-handle').hide(); // sorting will not work after adding relations with ajax.
+$('#addRelatedProduct').modal('hide'); // close the bootstrap modal
